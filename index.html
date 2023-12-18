@@ -12,6 +12,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #fffcf1; /* Soft background color */
         }
         header {
             margin-top: 50px;
@@ -27,25 +28,51 @@
             font-size: 1.2em;
             margin-top: 20px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 30px;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
         a {
             color: #0645AD;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .table-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin: 20px; /* Add some margin around the table */
+            max-width: 100%; /* Set maximum width */
+        }
+
+        table {
+            width: auto; /* Set table width to auto */
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 0 auto; /* Center the table */
+            table-layout: auto; /* Allow columns to adjust their size */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px 15px;
+            text-align: left;
+            background-color: #fff; /* White cell background */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+
+        th {
+            background-color: #ffcfc4; /* Header background color */
+            color: #000000;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffcfc4; /* Alternating row color */
+        }
+        table a {
+            color: #95c2d3; /* URL color */
+            text-decoration: none; /* Optional: removes underline from links */
+        }
+
+        table a:hover {
+            text-decoration: underline; /* Optional: adds underline on hover */
         }
     </style>
 </head>
@@ -55,47 +82,64 @@
         <h1>American Made Slip Rings</h1>
         <p class="subheader">If you are in the defense/aerospace industry you need parts made at home. We got your back!</p>
     </header>
+    <div class="table-container">
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Website</th>
-            <th>Location</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Catalog</th>
-            <th>Style</th>
-            <th>IP Rating</th>
-            <th>RPM Range</th>
-            <th># Of Conductors</th>
-            <th>Capability</th>
-            <th>Bore size</th>
-            <th>Ring Current</th>
-            <th>Ring Materials</th>
-            <th>Brush Materials</th>
-            <th>Notes</th>
-        </tr>
-        <!-- Mercotac -->
-        <tr>
-            <td>Mercotac</td>
-            <td><a href="https://www.mercotac.com/" target="_blank">mercotac.com</a></td>
-            <td>Carlsbad, CA</td>
-            <td><a href="mailto:sales@mercotac.com">sales@mercotac.com</a></td>
-            <td>(760) 431-7723</td>
-            <td><a href="path_to_catalog/MercotacProductCatalog_(1).pdf" target="_blank">Catalog</a></td>
-            <td>Brushless</td>
-            <td>IP51</td>
-            <td>300-7,500</td>
-            <td>1-8</td>
-            <td>AC, DC</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Use mercury in assemblies</td>
-        </tr>
-        <!-- Additional rows would be added here following the same pattern -->
-    </table>
+      <table>
+          <tr>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Catalog</th>
+              <th>Style</th>
+              <th>IP Rating</th>
+              <th>RPM Range</th>
+              <th># Of Conductors</th>
+              <th>Capability</th>
+              <th>Bore size</th>
+              <th>Ring Current</th>
+              <th>Ring Materials</th>
+              <th>Brush Materials</th>
+              <th>Notes</th>
+          </tr>
+          <!-- Mercotac -->
+          <tr>
+              <td><a href="https://www.mercotac.com/" target="_blank">Mercotac</a></td>
+              <td>Carlsbad, CA</td>
+              <td><a href="mailto:sales@mercotac.com">sales@mercotac.com</a></td>
+              <td>(760) 431-7723</td>
+              <td><a href="path_to_catalog/MercotacProductCatalog_(1).pdf" target="_blank">Catalog</a></td>
+              <td>Brushless</td>
+              <td>IP51</td>
+              <td>300-7,500</td>
+              <td>1-8</td>
+              <td>AC, DC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Use mercury in assemblies</td>
+          </tr>
+          <tr>
+              <td><a href="https://www.uea-inc.com/" target="_blank">United Equipment Accessories, Inc.</a></td>
+              <td>Waverly, Iowa</td>
+              <td><a href="mailto:info@uea-inc.com">info@uea-inc.com</a></td>
+              <td>800-394-9986</td>
+              <td><a href="sliprings%20us%20257a2fa7122d46299873d972e4434b22/5d56cd5ecf8afa96cd630286_Slip_Ring_Brochure.pdf" target="_blank">Catalog</a></td>
+              <td>Brushed</td>
+              <td>IP68</td>
+              <td>0-3,000</td>
+              <td>1-120</td>
+              <td>AC, DC, Eth</td>
+              <td>.5-14”</td>
+              <td>0-1000A</td>
+              <td>Brass, Silver</td>
+              <td>Graphite, Silver</td>
+              <td></td> <!-- Empty cell for 'Notes' as no notes are provided -->
+          </tr>
+          <!-- Additional rows would be added here following the same pattern -->
+      </table>
+    </div>
 
     <!-- Rest of your content goes here -->
 
